@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <form [formGroup]="userForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre" formControlName="name" labelPlacement="floating" placeholder="Ingrese Nombre"
+          #ionInputEl></ion-input>
+      </ion-item>
+      <ion-item>
+        <img id="photo" src=""/>
+      </ion-item>
+    </ion-list>
+    <div class="container-camara">
+      <ion-icon name="camera-outline" class="camara" (click)="takePhoto()"></ion-icon>
+    </div>
+  </form>
+</ion-content>
